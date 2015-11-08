@@ -16,7 +16,7 @@ gulp.task('scripts', function () {
   gulp.src('js/**/*.js')
     .pipe(browserify({
       insertGlobals: true,
-      debug: !gulp.env.production
+      debug: true
     }))
     .pipe(gulp.dest('./build/js'));
 });

@@ -1,10 +1,15 @@
 {
   "dependencies": {
+    "backbone": "^1.2.3",
     "backbone.marionette": "^2.4.3",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
     "gulp-sequence": "^0.4.1",
+    "jquery": "^2.1.4",
+    "underscore": "1.8.3",
     "uniq": "^1.0.1"
-  }
+  },
+  "main": "./js/app.js",
+  "devDependencies": {}
 }
