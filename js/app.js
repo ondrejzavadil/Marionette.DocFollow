@@ -6,6 +6,12 @@ Backbone.$ = $;
 
 var Marionette = require('backbone.marionette');
 
-var app =  Marionette.Application.extend({});
+var app = new Marionette.Application();
 
-console.log('ahoj');
+app.on('start', function() {
+  Backbone.history.start();
+  console.log('history started');
+});
+
+app.start();
+console.log('app file finished');
