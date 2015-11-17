@@ -1,7 +1,8 @@
 var browserify = require('gulp-browserify'),
     del = require('del'),
     gulp = require('gulp'),
-    gulpSequence = require('gulp-sequence');
+    gulpSequence = require('gulp-sequence'),
+    sourcemaps = require('gulp-sourcemaps');
 
 var path = {
   scripts: ['js/**/*.js'],
@@ -14,10 +15,12 @@ gulp.task('clean', function () {
 
 gulp.task('scripts', function () {
   gulp.src('js/**/*.js')
+    .pipe(sourcemaps.init())
     .pipe(browserify({
       insertGlobals: true,
       debug: true
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build/js'));
 });
 

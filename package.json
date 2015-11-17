@@ -1,4 +1,11 @@
 {
+  "description": "An example project for trying out more with Marionette",
+  "author": "Ondrej Zavadil",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ondrejzavadil/Marionette.DocFollow"
+  },
   "dependencies": {
     "backbone": "^1.2.3",
     "backbone.marionette": "^2.4.3",
@@ -11,5 +18,7 @@
     "uniq": "^1.0.1"
   },
   "main": "./js/app.js",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }
